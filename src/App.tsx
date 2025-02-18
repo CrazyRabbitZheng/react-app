@@ -1,8 +1,14 @@
-import ListGroup from './components/ListGroup';
-import Message from './components/ListGroup';
+import ListGroup from "./components/ListGroup";
+import Message from "./components/ListGroup";
 
 function App() {
-  return <div><ListGroup /></div>
+  let fruits = ["orange", "apple", "pear"];
+
+  return (
+    <div>
+      <ListGroup items={fruits} heading="Fruits" />
+    </div>
+  );
 }
 
 export default App;
